@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimu-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<title>颜值测试仪</title>
+</head>
+<body>
+	<!-- doc -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<!-- 第一页 -->
+			<div class="swiper-slide page_1 swiper-no-swiping">
+				<img src="img/bg_1.jpg" alt="" class="page_bg">
+				<a href="javascript:;" class="to_begain bt">开始测试</a>
+				<a href="javascript:;" class="to_rule bt">活动规则</a>
+			</div>
+			<!-- 第二页 -->
+			<div class="swiper-slide page_2 swiper-no-swiping" id="page_2">
+				<img src="img/2_logo.png" alt="" class="logo">
+				<img src="img/2_rule.png" alt="" class="rule">
+				<img src="img/2_time.png" alt="" class="time">
+				<img src="img/2_scadue.png" alt="" class="scadue">
+				<span class="time_txt">2016年4月1日——2016年4月21日</span>
+				<div class="rule_txt">
+					<p>1.上传照片，测测你的颜值有多高;</p>
+					<p>2.将后台生成的创意海报发送至江淮汽车官方微信后台即可参与抽奖;</p>
+					<p>3.随机抽取20位幸运粉丝获星动导师或学员签名照一张及星动亚洲特制T恤一件。</p>
+				</div>
+				<span class="descript">本次活动最终解释权归江淮汽车所有</span>
+				<a href="javascript:;" class="to_index bt">返回首页</a>
+			</div>
+			<!-- 第三页 -->
+			<div class="swiper-slide page_3 swiper-no-swiping" id="page_3">
+				<img src="img/3_avatar.png" alt="" class="avatar">
+				<div class="pic_area"></div>
+				<a href="javascript:;" class="to_choose bt">
+					选择照片
+					<input type="file" id="file" capture="camera">
+				</a>
+				<a href="javascript:;" class="to_input bt" id="to_input">开始上传</a>
+				<span class="descript">注：请两只手指旋转或调整照片尺寸</span>
+			</div>
+			<!-- 第四页 -->
+			<div class="swiper-slide page_4 swiper-no-swiping" id="page_4">
+				<img src="img/4_logo.png" alt="" class="logo">
+				<img src="img/4_result.png" alt="" class="result">
+				<img src="" alt="" class="page_bg">
+				<img src="" alt="" class="avatar">
+				<a href="javascript:;" class="to_share bt">炫耀一下</a>
+				<a href="javascript:;" class="to_again bt">再测一次</a>
+				<span class="descript">截图发送至江淮汽车官方微信可参与抽奖</span>
+			</div>
+		</div>
+	</div>
+	<div class="share">
+		<div class="shadow"></div>
+		<img src="img/share_title.png" alt="" class="logo">
+		<img src="img/ewm.jpg" alt="" class="ewm">
+		<p class="share_txt"><span>长按图片</span><br/>进入江淮汽车《星动亚洲》专题页面</p>
+	</div>
+	<img class="music_ctrl on" src="img/music_on.png" alt="">
+	<audio src="music/music.mp3" id="music" autoplay preload loop="loop"></audio>
+	<div class="loading">loading……</div>
+	<!-- script -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="weixin/jssdk/share.js"></script>
+	<script src="js/iscroll-zoom.js"></script>
+	<script src="js/hammer.js"></script>
+	<script src="js/jquery.photoClip.js"></script>
+	<script src="js/swiper.3.1.2.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function (argument) {
+			window.onload = function (argument) {
+					var $windowWidth = $(window).width();
+					var $designWidth = $("body").attr("data-design-width"); //获得写在body的设计宽度 如果设计稿是750px就在 body上添加属性 data-design-width＝"750" 
+					var $designdpr = $("body").attr("data-design-dpr"); //获得写在body的设计dpr
+					$("html").attr("data-dpr", window.devicePixelRatio); //获得设备dpr 写在 html 上
+					if (!$designWidth) {
+						$designWidth = 640; //没有获得 写在body的设计宽度 时，使用默认宽度 640px
+					}
+					if (!$designdpr) {
+						$designdpr = 2; //没有获得 写在body的设计dpr 时，使用默认dpr 2
+					}
+					// console.log($windowWidth, $designWidth, $designdpr);
+					//下面都是换算 
+					setTimeout(function() {
+						$windowWidth = $(window).width();
+						if ($windowWidth > $designWidth) {
+							$windowWidth = $designWidth;
+						}
+						$("html").css("font-size", (100 / ($designWidth / $designdpr)) * $windowWidth + "px");
+					}, 100);
+					$(window).resize(function() {
+						$windowWidth = $(window).width();
+						if ($windowWidth > $designWidth) {
+							$windowWidth = $designWidth;
+						}
+						$("html").css("font-size", (100 / ($designWidth / $designdpr)) * $windowWidth + "px");
+					});
+					$(".loading").hide();
+			}
+			
+		})
+	</script>
+</body>
+</html>

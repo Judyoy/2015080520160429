@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>yaoyiyao</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css?v=1"></head>
+<body>
+	<div class="top_bg"></div>
+	<div class="bottom_bg"></div>
+
+	<div class="doc">
+		<span class="txt">名次</span>
+		<div class="content">
+		<div class="ct_bg"></div>
+		<ul>
+			<li class="compete compete_1">
+				<span class="ranking rank_1">0</span>
+				<div class="road">
+					<div class="run_man run_man_1">
+						<img src="" class="avatar"></div>
+				</div>
+			</li>
+			<li class="compete compete_2">
+				<span class="ranking rank_2">0</span>
+				<div class="road">
+					<div class="run_man run_man_2">
+						<img src="" class="avatar"></div>
+				</div>
+			</li>
+			<li class="compete compete_3">
+				<span class="ranking rank_3">0</span>
+				<div class="road">
+					<div class="run_man run_man_3">
+						<img src="" class="avatar"></div>
+				</div>
+			</li>
+			<li class="compete compete_4">
+				<span class="ranking rank_4">0</span>
+				<div class="road">
+					<div class="run_man run_man_4">
+						<img src="" class="avatar"></div>
+				</div>
+			</li>
+			<li class="compete compete_5">
+				<span class="ranking rank_5">0</span>
+				<div class="road">
+					<div class="run_man run_man_5">
+						<img src="" class="avatar"></div>
+				</div>
+			</li>
+			<li class="compete compete_6">
+				<span class="ranking rank_6">0</span>
+				<div class="road">
+					<div class="run_man run_man_6">
+						<img src="" class="avatar"></div>
+				</div>
+			</li>
+		</ul>
+		</div>
+		<img src="img/start.png" class="start">
+	</div>
+	<!-- scipt -->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function (argument) {
+			var txt_h = parseInt($(".txt").height()),
+				li_mg = parseInt($("ul").height())*0.02,
+				li_h = parseInt($("li").height());
+			$(".txt").css({"font-size":txt_h*0.6,"line-height":txt_h+"px"});
+			$("li").css("margin-bottom",li_mg);
+			$(".ranking").css({"font-size":li_h*0.6,"line-height":li_h+"px"});
+			$(".run_man").css("width",li_h);
+			window.onresize = (function () {
+				var txt_h = parseInt($(".txt").height()),
+					li_mg = parseInt($("ul").height())*0.02,
+					li_h = parseInt($("li").height());
+				$(".txt").css({"font-size":txt_h*0.6,"line-height":txt_h+"px"});
+				$("li").css("margin-bottom",li_mg);
+				$(".ranking").css({"font-size":li_h*0.6,"line-height":li_h+"px"});
+				$(".run_man").css("width",li_h);
+			})
+			var running;
+			$(".start img").click(function (argument) {
+				$.ajax({
+					type: "POST",
+					url: "index.php?m=Home&c=Index&a=startActive",
+					async: false
+				})
+				running = setInterval(function (argument) {
+					run();
+				},1000/2);
+			})
+			function run () {
+				$.ajax({
+					type: "POST",
+					url: "index.php?m=Home&c=Index&a=getInfo",
+					async: false,
+					success: function(json) {
+						var over = json.over;
+						if (json.status) {
+							var avatar = json.data.headimgurl,
+									steps = "",
+									is_win = "",
+									rank = "";
+								var load_w = parseInt($(".road").css("width"));
+								for (var i = 0; i < json.data.length; i++) {
+									avatar = json.data[i].headimgurl;
+									step_percent = load_w/60*parseInt(json.data[i].steps);
+									is_win = json.data[i].is_win;
+									rank = json.data[i].rank;
+									$("li").eq(i).find(".run_man").css({"left":step_percent});
+									$("li").eq(i).find(".avatar").attr("src",avatar);
+									$("li").eq(i).find(".ranking").html(rank);
+									if (is_win == 1) {
+										$("li").eq(i).find(".run_man").css({"left":load_w});
+									};
+								};
+							if (over) {
+								clearInterval(running);
+							}
+						}else{
+							if (over) {
+								clearInterval(running);
+							};
+						}
+					}
+				})
+			}
+		})
+	</script></body>
+</html>

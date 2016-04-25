@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>长安汽车</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?2fed88d1c6142640914aa684af3594dd";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<script src="js/html5media.min.js"></script>
+</head>
+<body>
+	<!-- doc -->
+	<div class="g-doc">
+		<div class="g-banner">
+			<div class="banner_wrap">
+				<img src="img/logo_l.png" class="logo_l">
+				<img src="img/logo_r.png" class="logo_r">				
+			</div>
+		</div>
+		<div class="g-message">
+			<div class="message_wrap">
+				<div class="m-message">
+					<img src="img/message.png" class="message_pic">
+					<form onsubmit="return false;">
+						<div class="message message_name clearfix">
+							<span class="title">您的姓名：*</span>
+							<input type="text" class="name" placeholder="姓名"/>
+						</div>
+						<div class="message message_phone clearfix">
+							<span class="title">手机号码：*</span>
+							<input type="text" class="phone" placeholder="手机号码"/>
+						</div>
+						<div class="message message_car clearfix">
+							<span class="title">选择车系：*</span>
+							<select name="dealer_brand" id="dealer_brand">
+								<option value="1">乘用</option>
+							</select>
+							<select name="car_series" id="car_series" class="car_series">
+								<option value="0">选择车系</option>
+								<option value="CD101">睿骋</option>
+								<option value="B501">悦翔V3</option>
+								<option value="S101">CS35</option>
+								<option value="C202">逸动XT</option>
+								<option value="C201">逸动</option>
+								<option value="A301">新奔奔</option>
+								<option value="S301">CS75</option>
+								<option value="B211">悦翔V7</option>
+								<option value="C206">逸动纯电动</option>
+								<option value="A101_A102">奔奔mini</option>
+								<option value="B301_EA14">CX20</option>
+								<option value="B311">CS15</option>
+							</select>
+						</div>
+						<div class="message message_store clearfix">
+							<span class="title">选择离您最近的4S店：*</span>
+							<div class="store nomal_link clearfix">
+								<select class="province">
+									<option value="0">请选择省份</option>
+								</select>
+								<select class="city">
+									<option value="0">请选择城市</option>
+								</select>
+								<select class="no_mr area">
+									<option value="0">请选择县区</option>
+								</select>
+								<select class="dealer" style="width: 248px;">
+									<option value="0">请选择经销商</option>
+								</select>
+							</div>
+						</div>
+						<div class="message">
+							<a href="javascript:;" class="submit_bt"></a>
+						</div>
+						<input type="reset" class="reset">
+					</form>
+				</div>
+				<img src="" class="car_descript" alt="">
+				<img src="" class="car_message" alt="">
+			</div>
+		</div>
+		<div class="g-car">
+			<div class="m-car_1">
+				<div class="car_wrap clearfix">
+					<img src="img/cs75/car.png" class="car_huisheng f-show">
+					<img src="img/cs35/car.png" class="car_huisheng">
+					<img src="img/yidong/car.png" class="car_huisheng">
+					<img src="img/yidongxt/car.png" class="car_huisheng">
+					<img src="img/yuexiangv7/car.png" class="car_huisheng">
+					<img src="img/yuexiangv3/car.png" class="car_huisheng">
+					<img src="img/ruichi/car.png" class="car_huisheng">
+					<img src="img/xinbenben/car.png" class="car_huisheng">
+					<ul class="car_list clearfix clearfix">
+						<li class="on">
+							CS15
+						</li>
+						<li>
+							CS75
+						</li>
+						<li>
+							CS35
+						</li>
+						<li>
+							逸动
+						</li>
+						<li>
+							逸动XT
+						</li>
+						<li>
+							悦翔V7
+						</li>
+						<li>
+							悦翔V3
+						</li>
+						<li>
+							睿骋
+						</li>
+						<li>
+							新奔奔
+						</li>
+					</ul>
+					<div class="txt txt_cs15 txt_on">
+						<img src="img/cs15/txt_1.png" class="txt_1">
+						<img src="img/cs15/txt_2.png" class="txt_2">
+						<p class="descript" style="position:absolute;top:130px;right:0;margin:0;">*详情请咨询当地经销商</p>
+						<div class="video_area">
+							<video src="video/cs15.mp4" id="video_2" poster="img/cs15/poster.jpg" controls preload width="235" height="100"></video>
+						</div>
+						<img src="img/cs15/txt_3.png" class="txt_3">
+					</div>
+					<div class="txt txt_cs75 txt_on">
+						<img src="img/cs75/txt_1.png" class="txt_1">
+						<div class="txt_sub">
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;"><span style="font-weight:normal;">2014款优惠</span>12000元<span style="font-weight:normal;">，月供低至181元起</span></p>
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 10px 0 5px 0;"><span style="font-weight:normal;">2015款四驱版优惠</span>4000元<span style="font-weight:normal;">，月供低至372元起</span></p>
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 10px 0 5px 0;"><span style="font-weight:normal;">2016款升级上市</span>9.28万元起<span style="font-weight:normal;">，月供低至159元起</span></p>
+
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 40px 0 5px 0;">购车即送1688元诚意大礼包</p>
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 0 0 15px 0;">（3月23日~4月30日）</p>
+							<p style="font-size: 16px;color: #a1a39f;background: url(img/red_circle.png) 178px center no-repeat;width:361px;">嘉实多全合成机油4L/桶</p>
+							<p style="font-size: 16px;color: #a1a39f;background: url(img/red_circle.png) 218px center no-repeat;width:361px;">多功能安全锤一把</p>
+							<p style="font-size: 16px;color: #a1a39f;background: url(img/red_circle.png) 202px center no-repeat;width:361px;">车用空气净化器一台</p>
+							<p style="font-size: 16px;color: #a1a39f;background: url(img/red_circle.png) 202px center no-repeat;width:361px;">多功能应急电源一台</p>
+							<p class="descript">*详情请咨询当地经销商</p>
+						</div>
+					</div>
+					<div class="txt txt_cs35 ">
+						<img src="img/cs35/txt_1.png" class="txt_1">
+						<img src="img/cs35/txt_2.png" class="txt_2">
+						<div class="txt_sub">
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 15px 0 5px 0;">月供低至153元起</p>
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 15px 0 5px 0;">置换CS35最高补贴新车指导价的4%</p>
+							<p class="descript">*详情请咨询当地经销商</p>
+						</div>
+					</div>
+					<div class="txt txt_yidong">
+						<img src="img/yidong/txt_1.png" class="txt_1">
+						<img src="img/yidong/txt_2.png" class="txt_2">
+						<div class="txt_sub">
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 15px 0 5px 0;">月供低至121元起</p>
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 15px 0 5px 0;">置换逸动最高补贴新车指导价的4%</p>
+							<p class="descript">*详情请咨询当地经销商</p>
+						</div>
+					</div>
+					<div class="txt txt_yidongxt">
+						<img src="img/yidongxt/txt_1.png" class="txt_1">
+						<img src="img/yidongxt/txt_2.png" class="txt_2">
+						<div class="txt_sub">
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 15px 0 5px 0;">月供低至142元起</p>
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 15px 0 5px 0;">置换逸动XT最高补贴新车指导价的4%</p>
+							<p class="descript">*详情请咨询当地经销商</p>
+						</div>
+					</div>
+					<div class="txt txt_yuexiangv7">
+						<img src="img/yuexiangv7/txt_1.png" class="txt_1">
+						<img src="img/yuexiangv7/txt_2.png" class="txt_2">
+						<div class="txt_sub">
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 15px 0 5px 0;">月供低至99元起</p>
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 15px 0 5px 0;">置换悦翔V7最高补贴新车指导价的4%</p>
+							<p class="descript">*详情请咨询当地经销商</p>
+						</div>
+					</div>
+					<div class="txt txt_yuexiangv3">
+						<img src="img/yuexiangv3/txt_1.png" class="txt_1">
+						<img src="img/yuexiangv3/txt_2.png" class="txt_2">
+						<div class="txt_sub">
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 15px 0 5px 0;">月供低至45元起</p>
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 15px 0 5px 0;">置换悦翔V3最高补贴新车指导价的4%</p>
+							<p class="descript">*详情请咨询当地经销商</p>
+						</div>
+					</div>
+					<div class="txt txt_ruichi">
+						<img src="img/ruichi/txt_1.png" class="txt_1">
+						<img src="img/ruichi/txt_2.png" class="txt_2">
+						<div class="txt_sub">
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 15px 0 5px 0;">月供低至148元起</p>
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 0 0 5px 0;">置换睿骋最高补贴新车指导价的5%</p>
+							<p class="descript">*详情请咨询当地经销商</p>
+						</div>
+					</div>
+					<div class="txt txt_xinbenben ">
+						<img src="img/xinbenben/txt_1.png" class="txt_1">
+						<img src="img/xinbenben/txt_2.png" class="txt_2">
+						<div class="txt_sub">
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 15px 0 5px 0;">月供低至217元起</p>
+							<p style="font: bold 17px/17px 'microsoft yahei';color: #e60012;margin: 15px 0 5px 0;">置换新奔奔最高补贴新车指导价的4%</p>
+							<p class="descript">*详情请咨询当地经销商</p>
+						</div>
+					</div>
+					<div class="cs15_360">
+						<div class="slide_2" id="slide_2">
+							<div class="slide_wrap_2" id="slide_wrap_2">
+								<div class="slide_item_2">
+									<img src="img/cs15/360_1.png">
+								</div>
+								<div class="slide_item_2">
+									<img src="img/cs15/360_2.png">
+								</div>
+								<div class="slide_item_2">
+									<img src="img/cs15/360_3.png">
+								</div>
+								<div class="slide_item_2">
+									<img src="img/cs15/360_4.png">
+								</div>
+								<div class="slide_item_2">
+									<img src="img/cs15/360_5.png">
+								</div>
+								<div class="slide_item_2">
+									<img src="img/cs15/360_6.png">
+								</div>
+								<div class="slide_item_2">
+									<img src="img/cs15/360_7.png">
+								</div>
+								<div class="slide_item_2">
+									<img src="img/cs15/360_8.png">
+								</div>
+								<div class="slide_item_2">
+									<img src="img/cs15/360_9.png">
+								</div>
+								<div class="slide_item_2">
+									<img src="img/cs15/360_10.png">
+								</div>
+								<div class="slide_item_2">
+									<img src="img/cs15/360_11.png">
+								</div>
+								<div class="slide_item_2">
+									<img src="img/cs15/360_12.png">
+								</div>
+							</div>
+						</div>
+						<div class="swiper_ctrl_2">
+							<a href="javascript:;" class="prev_2" id="prev_2">
+								
+							</a>
+							<a href="javascript:;" class="next_2" id="next_2">
+								
+							</a>
+						</div>
+					</div>
+					<div class="cs15_colorful clearfix">
+						<div class="color_item">
+							<img src="img/cs15/color_1.jpg" alt="">
+							<span class="color_descript">闪光炫彩橙黄</span>
+						</div>
+						<div class="color_item">
+							<img src="img/cs15/color_2.jpg" alt="">
+							<span class="color_descript">闪光宝石红</span>
+						</div>
+						<div class="color_item">
+							<img src="img/cs15/color_3.jpg" alt="">
+							<span class="color_descript">闪光深海蓝</span>
+						</div>
+						<div class="color_item">
+							<img src="img/cs15/color_4.jpg" alt="">
+							<span class="color_descript">闪光璀璨金黄</span>
+						</div>
+						<div class="color_item">
+							<img src="img/cs15/color_5.jpg" alt="">
+							<span class="color_descript">闪光珠光黑</span>
+						</div>
+						<div class="color_item">
+							<img src="img/cs15/color_6.jpg" alt="">
+							<span class="color_descript">雪域白</span>
+						</div>
+						<div class="color_item nomargin">
+							<img src="img/cs15/color_7.jpg" alt="">
+							<span class="color_descript">闪光星河银灰</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="m-car_2">
+				<div class="car_wrap">
+					<img src="img/car_detail.png" class="car_detail">
+					<ul class="car_list clearfix clearfix">
+						<li class="on">
+							CS15
+						</li>
+						<li>
+							CS75
+						</li>
+						<li>
+							CS35
+						</li>
+						<li>
+							逸动
+						</li>
+						<li>
+							逸动XT
+						</li>
+						<li>
+							悦翔V7
+						</li>
+						<li>
+							悦翔V3
+						</li>
+						<li>
+							睿骋
+						</li>
+						<li>
+							新奔奔
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="m-car_3">
+				<div class="car_wrap">
+					
+				</div>
+			</div>
+			<div class="m-car_4">
+				<div class="car_wrap">
+					<ul class="car_list clearfix clearfix">
+						<li class="on">
+							CS15
+						</li>
+						<li>
+							CS75
+						</li>
+						<li>
+							CS35
+						</li>
+						<li>
+							逸动
+						</li>
+						<li>
+							逸动XT
+						</li>
+						<li>
+							悦翔V7
+						</li>
+						<li>
+							悦翔V3
+						</li>
+						<li>
+							睿骋
+						</li>
+						<li>
+							新奔奔
+						</li>
+					</ul>
+					<div class="peizhi_box">
+						<div class="box_hd">
+							<img src="img/cs75/cs75.png">
+							<img src="img/cs35/cs35.png">
+							<img src="img/yidong/yidong.png">
+							<img src="img/yidongxt/yidongxt.png">
+							<img src="img/yuexiangv7/yuexiangv7.png">
+							<img src="img/yuexiangv3/yuexiangv3.png">
+							<img src="img/ruichi/ruichi.png">
+							<img src="img/xinbenben/xinbenben.png">
+						</div>
+						<div class="box_bd" id="peizhi_scroll">
+							<img src="img/cs75/cs75_peizhi.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="m-yidong_submit">
+				<div class="car_wrap">
+					<img src="img/yidong/rule.png" class="rule" alt="">
+					<div class="rule_txt">
+						<div class="opaciy_bg">
+						</div>
+						<div class="rule_bd">
+							<p><span class="red bold">4年品质坚持，荣膺50万车主信赖。</span></p>
+							<p>长安逸动，4年50万车主赠言活动， “逸”路同行，真情见证。</p>
+							<p>即日起至<span class="red">4月30日</span>，逸动车主上传您的用车感受，即有机会可获赠<span class="red">逸动精美车模</span>一个。</p>
+						</div>
+					</div>
+					<img src="img/yidong/txt_submit.png" class="txt_submit" alt="">
+					<div class="clearfix">
+						<textarea class="input_txt"></textarea>
+						<div class="video_area">
+							<!--a href="javascript:void(0)" id="zhezhao"><img src="img/yidong/shipin.png" alt=""></a-->
+							<video src="video/yidong.mp4" id="video" poster="img/yidong/shipin.png" controls preload ></video>
+						</div>
+					</div>
+					<div class="clearfix bts">
+						<select name="province" class="province_2">
+							<option value="0">选择省份</option>
+							<option value="北京">北京</option>
+							<option value="四川">四川</option>
+							<option value="湖南">湖南</option>
+							<option value="浙江">浙江</option>
+							<option value="云南">云南</option>
+							<option value="广西">广西</option>
+							<option value="河北">河北</option>
+							<option value="贵州">贵州</option>
+							<option value="山西">山西</option>
+							<option value="郑州">河南</option>
+							<option value="陕西">陕西</option>
+							<option value="新疆">新疆</option>
+							<option value="江苏">江苏</option>
+							<option value="吉林">吉林</option>
+							<option value="山东">山东</option>
+							<option value="重庆">重庆</option>
+							<option value="广东">广东</option>
+							<option value="湖北">湖北</option>
+							<option value="天津">天津</option>
+							<option value="上海">上海</option>
+							<option value="辽宁">辽宁</option>
+							<option value="黑龙江">黑龙江</option>
+							<option value="江苏">江苏</option>
+							<option value="安徽">安徽</option>
+							<option value="福建">福建</option>
+							<option value="江西">江西</option>
+							<option value="河南">河南</option>
+							<option value="海南">海南</option>
+							<option value="甘肃">甘肃</option>
+							<option value="青海">青海</option>
+							<option value="台湾">台湾</option>
+							<option value="内蒙古">内蒙古</option>
+							<option value="西藏">西藏</option>
+							<option value="宁夏">宁夏</option>
+							<option value="香港">香港</option>
+							<option value="澳门">澳门</option>
+						</select>
+						<div class="up_pic">
+							<span>上传照片</span>
+							<form action="index.php?m=Message&c=Index&a=uploadPhoto"  method="post" enctype="multipart/form-data">
+								<input type="file" name="photo" id="bannerUpload">
+							</form>
+						</div>
+						<a href="javascript:;" class="submit">发布</a>
+					</div>
+				</div>
+			</div>
+			<div class="m-yidong_read">
+				<div class="car_wrap">
+					<div class="clearfix">
+						<img src="img/yidong/txt_read.png" class="txt_read">
+						<div class="areas clearfix">
+						 	<a href="javascript:;" class="no_margin">北京</a>
+						 	<a href="javascript:;">四川</a>
+						 	<a href="javascript:;">湖南</a>
+						 	<a href="javascript:;">浙江</a>
+						 	<a href="javascript:;">云南</a>
+						 	<a href="javascript:;">广西</a>
+						 	<a href="javascript:;">河北</a>
+						 	<a href="javascript:;">贵州</a>
+						 	<a href="javascript:;">山西</a>
+						 	<a href="javascript:;">河南</a>
+						 	<a href="javascript:;" class="no_margin">陕西</a>
+						 	<a href="javascript:;">新疆</a>
+						 	<a href="javascript:;">江苏</a>
+						 	<a href="javascript:;">吉林</a>
+						 	<a href="javascript:;">山东</a>
+						 	<a href="javascript:;">重庆</a>
+						 	<a href="javascript:;">广东</a>
+						 	<a href="javascript:;">湖北</a>
+						 	<span class="show_all">更多</span>
+						 	<div class="more clearfix">
+						 		<a href="javascript:;" class="no_margin">天津</a>
+							 	<a href="javascript:;">上海</a>
+							 	<a href="javascript:;">辽宁</a>
+							 	<a href="javascript:;">黑龙江</a>
+							 	<a href="javascript:;" style="margin-left:28px">江苏</a>
+							 	<a href="javascript:;">安徽</a>
+							 	<a href="javascript:;">福建</a>
+							 	<a href="javascript:;">江西</a>
+							 	<a href="javascript:;" >河南</a>
+							 	<a href="javascript:;" >海南</a>
+							 	<a href="javascript:;" class="no_margin">甘肃</a>
+							 	<a href="javascript:;">青海</a>
+							 	<a href="javascript:;">台湾</a>
+							 	<a href="javascript:;">内蒙古</a>
+							 	<a href="javascript:;" style="margin-left:28px">西藏</a>
+							 	<a href="javascript:;">宁夏</a>
+							 	<a href="javascript:;">香港</a>
+							 	<a href="javascript:;">澳门</a>
+						 	</div>
+						</div>
+					</div>
+					<div class="read_bd">
+						<ul id="word_scroll">
+							<!-- <li>
+								<img src="">
+								<span class="words">车主说话车主说话</span>
+							</li> -->
+						</ul>
+						<span class="show_more">查看更多</span>
+					</div>
+				</div>
+			</div>
+			<div class="m-car_5">
+				<div class="car_wrap">
+					<ul class="car_list clearfix">
+						<li class="on">
+							CS15
+						</li>
+						<li>
+							CS75
+						</li>
+						<li>
+							CS35
+						</li>
+						<li>
+							逸动
+						</li>
+						<li>
+							逸动XT
+						</li>
+						<li>
+							悦翔V7
+						</li>
+						<li>
+							悦翔V3
+						</li>
+						<li>
+							睿骋
+						</li>
+						<li>
+							新奔奔
+						</li>
+					</ul>
+					<div class="slide" id="slide">
+						<div class="slide_wrap" id="slide_wrap">
+							
+						</div>
+					</div>
+					<div class="swiper_ctrl">
+						<div class="slide_ctrl" id="slide_ctrl">
+							<div class="ctrl_wrap clearfix" id="ctrl_wrap">
+								
+							</div>
+						</div>
+						<a href="javascript:;" class="prev" id="prev">
+							
+						</a>
+						<a href="javascript:;" class="next" id="next">
+							
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="read_detail">
+		<img src="img/yidong/close.jpg" class="close">
+		<div class="pic-wrap">
+			<img src="" class="pic">			
+		</div>
+		<div class="word">
+			
+		</div>
+	</div>
+	<div class="shade">
+		
+	</div>
+	<!-- javascript -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jsScroll.js"></script>
+	<script type="text/javascript" src="js/slide.js"></script>
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+	<!--<script type="text/javascript" src="js/area.js"></script>-->
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body,td,input,select,textarea,h1,h2,h3,h4,h5,h6{font-size:12px;font-family:"microsoft yahei"}h1,h2,h3,h4,h5,h6{font-weight:normal}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}ul,ol{list-style:none}img{border:0;vertical-align:top}input,select,textarea{vertical-align:middle}a{text-decoration:none;color:#000}a:hover{text-decoration:none}.clearfix:after{visibility:hidden;display:block;font-size:0;content:"";clear:both;height:0}.clearfix{*zoom:1}.mar-cent{margin-left:auto;margin-right:auto;display:block}
+
+body{width: 100%;height: 100%;background: #fff url(../img/bg.jpg) center center repeat-y;overflow: hidden;}
+.doc{width: 100%;height: 80%;position: fixed;top: 10%;left: 0;}
+.top_bg{width: 100%;height: 10%;background: url(../img/top_bg.png) top center no-repeat;position: fixed;top: 0;left: 0;}
+.bottom_bg{width: 100%;height: 10%;background: url(../img/bottom_bg.png) bottom center repeat-x;position: fixed;bottom: 0;left: 0;}
+.txt{height: 10%;width: 8%;color: #e9527c;font-family: "microsoft yahei";font-weight: bold;display: block;}
+.content{width: 100%;height: 74%;}
+ul{width: 100%;height: 100%;overflow: hidden;}
+.content{position: relative;}
+.ct_bg{height: 100%;background: url(../img/right_bg.jpg) top right repeat;position: absolute;right: 0;top: 0;width: 8%;}
+li{width: 92%;height: 15%;background: url(../img/road.png) top right repeat-x;font-size: 0;}
+.ranking{width: 10%;height: 100%;display: inline-block;font-family: "microsoft yahei";margin: 0 auto;text-align: center;color: #e9527c;vertical-align: top;font-weight: bold;}
+.road{display: inline-block;width: 90%;height: 100%;position: relative;}
+.run_man{height: 100%;background: #e9527c;border-radius: 30px;position: absolute;top: 0;left:0;overflow: hidden;}
+.avatar{width: 100%;height: 100%;}
+.start{height: 10%;margin: 0 auto;display: block;cursor: pointer;position: fixed;bottom: 10%;left: 50%;margin-left: -10%;border: none;}

@@ -1,0 +1,156 @@
+@import "base.css";
+@import "swiper.3.1.2.min.css";
+html,
+body {
+  position: relative;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-slide {
+  background: #fff;
+  position: relative;
+}
+.swiper-container .page_bg {
+  width: 3.2rem;
+  /* position: absolute;top: 0;left: 0; */
+}
+.swiper-container .pab {
+  position: absolute;
+}
+.page_1 .input_cpn {
+  position: absolute;
+  top: 2.355rem;
+  left: 0.2rem;
+  z-index: 1;
+  width: 2.81rem;
+  height: 0.48rem;
+  border: 4px solid #0363b3;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.page_1 .input_cpn .input_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.355rem;
+  height: 0.48rem;
+}
+.page_1 .input_cpn .company {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 2.355rem;
+  height: 0.48rem;
+  border: none;
+  border-radius: 0;
+  background: #ffffff url(../img/company_name.png) center center no-repeat;
+  -webkit-background-size: 70%;
+  background-size: 70%;
+  font: 0.2rem/0.48rem "microsoft yahei";
+  text-align: center;
+  color: #004097;
+}
+.page_1 .input_cpn #company {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 2.355rem;
+  height: 0.48rem;
+  border: none;
+  border-radius: 0;
+  opacity: 0;
+}
+.page_1 .input_cpn .go {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.455rem;
+  height: 0.48rem;
+  background: #fee86c url(../img/go.png) center center no-repeat;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+  display: block;
+}
+.page_3,
+.page_4,
+.page_5 {
+  color: #004097;
+}
+.page_3 .row_1,
+.page_4 .row_1,
+.page_5 .row_1 {
+  top: 1.69rem;
+  left: 0;
+  text-align: center;
+  font: bold 0.29rem/0.33rem "microsoft yahei";
+  width: 3.2rem;
+}
+.page_3 .big,
+.page_4 .big,
+.page_5 .big {
+  width: 0.185rem;
+  vertical-align: middle;
+}
+.page_3 .row_2,
+.page_4 .row_2,
+.page_5 .row_2 {
+  top: 2.465rem;
+  left: 0;
+  text-align: center;
+  font: bold 0.175rem/0.175rem "microsoft yahei";
+  width: 3.2rem;
+}
+.page_3 .row_2 img,
+.page_4 .row_2 img,
+.page_5 .row_2 img {
+  height: 0.13rem;
+  vertical-align: bottom;
+}
+.page_6 .row_1 {
+  width: 2.24rem;
+  top: 1.535rem;
+  left: 0.48rem;
+}
+.page_6 .row_2 {
+  width: 1.935rem;
+  top: 2.23rem;
+  left: 0.64rem;
+}
+.loading {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.navs {
+  width: 3.2rem;
+  height: 0.195rem;
+  position: fixed;
+  top: 4.72rem;
+  text-align: center;
+  z-index: 998;
+}
+.navs .item {
+  width: 0.185rem;
+  height: 0.195rem;
+  background: url(../img/shizhong.png) center center no-repeat;
+  -webkit-background-size: 70%;
+  display: inline-block;
+  background-size: 70%;
+}
+.navs .active {
+  background: url(../img/babaozhou.png) center center no-repeat;
+  -webkit-background-size: 100%;
+  display: inline-block;
+  background-size: 100%;
+}
