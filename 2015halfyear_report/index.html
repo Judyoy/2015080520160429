@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link type="text/css" rel="stylesheet" href="styles/base.css" />
+		<link type="text/css" rel="stylesheet" href="styles/idangerous.swiper.css" />
+		<link type="text/css" rel="stylesheet" href="styles/themes.css" />
+		<link rel="stylesheet" href="./styles/loading.css">
+		<title>牛逼闪闪的GIMC半年报</title>
+		<!--移动端版本兼容 -->
+		<script type="text/javascript">
+			var phoneWidth = parseInt(window.screen.width);
+			var phoneScale = phoneWidth / 640;
+			var ua = navigator.userAgent;
+			if (/Android (\d+\.\d+)/.test(ua)) {
+				var version = parseFloat(RegExp.$1);
+				if (version > 2.3) {
+					document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+				} else {
+					document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+				}
+			} else {
+				document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+			}
+		</script>
+		<style type="text/css">
+			/*音乐*/
+			
+			#onOff {
+				width: 49px;
+				height: 49px;
+				position: fixed;
+				bottom: 10px;
+				left: 10px;
+				z-index: 999;
+			}
+			#onOff div {
+				width: 50px;
+				height: 50px;
+				border-radius: 50px;
+				background-color: rgb(170, 31, 36);
+			}
+			#off {
+				display: none;
+			}
+			@keyframes xz {
+				0% {
+					-webkit-transform: rotate(0deg);
+				}
+				100% {
+					-webkit-transform: rotate(360deg);
+				}
+			}
+			@-moz-keyframes xz {
+				0% {
+					-webkit-transform: rotate(0deg);
+				}
+				100% {
+					-webkit-transform: rotate(360deg);
+				}
+			}
+			@-webkit-keyframes xz {
+				0% {
+					-webkit-transform: rotate(0deg);
+				}
+				100% {
+					-webkit-transform: rotate(360deg);
+				}
+			}
+			@-o-keyframes xz {
+				0% {
+					-webkit-transform: rotate(0deg);
+				}
+				100% {
+					-webkit-transform: rotate(360deg);
+				}
+			}
+			.xz {
+				-webkit-animation: xz 4s linear infinite;
+			}
+			.changeTips {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				background: url(./imges/rotate.png?ver=1) no-repeat center center;
+				background-color: #000;
+				top: 0;
+				left: 0px;
+				z-index: 99999;
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<img src="imges/share.jpg" alt="" style="position:absolute; top:-300px; left:-300px; opacity:0; width:300px; z-index:-9;">
+
+		</div>
+		<div class="loading" style="height: 100%; width: 100%; background-color: #EFEFEF; z-index: 9999;">
+			<div id="loadingArea" style="display:block;">
+				<div class="spinner">
+					<div class="spinner-container container1">
+						<div class="circle1"></div>
+						<div class="circle2"></div>
+						<div class="circle3"></div>
+						<div class="circle4"></div>
+					</div>
+					<div class="spinner-container container2">
+						<div class="circle1"></div>
+						<div class="circle2"></div>
+						<div class="circle3"></div>
+						<div class="circle4"></div>
+					</div>
+					<div class="spinner-container container3">
+						<div class="circle1"></div>
+						<div class="circle2"></div>
+						<div class="circle3"></div>
+						<div class="circle4"></div>
+					</div>
+				</div>
+				<div class="hardLoad">努力加载中....</div>
+			</div>
+		</div>
+		<div>
+			<img class="bottom_txt" src="imges/down.png" />
+		</div>
+		<!--bottom_txt-->
+		<div class="changeTips"></div>
+		<!--开始滑屏-->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<!--   p1     -->
+				<div class="swiper-slide ac-page ac-p1">
+					<!--图片框-->
+					<div class="img-cont">
+						<img class="icon" src="imges/img_s/GMIC.png" />
+					</div>
+					<div class="txt-cont mar-cent">
+						<img class="icon1" src="imges/img_s/lightword.png" />
+						<!--<img class="icon4" src="imges/img_s/img_s/light.png" />-->
+					</div>
+
+					<div class="cow-cont mar-cent">
+						<img class="icon2" src="imges/img_s/gimccow.png" />
+					</div>
+				</div>
+				<!--    p2   -->
+				<div class="swiper-slide ac-page ac-p2">
+					<!--图片框-->
+					<div class=" word-cont ">
+						<img class="icon2-1 " src="imges/img_s/word02.png" />
+					</div>
+					<div class="txt-cont">
+						<img class="icon2-2" src="imges/img_s/word2_02.png" />
+						<img class="icon2-3" src="imges/img_s/word2_01.png" />
+						<img class="icon2-4" src="imges/img_s/plane2.png" />
+					</div>
+					<!--<img class="lucky-money" src="imges/bigmoney_02.png" />-->
+
+					<div class="down">
+						<img class="roade" src="imges/img_s/road2.png" />
+						<img class="cow2" src="imges/img_s/cow2.png" />
+					</div>
+				</div>
+				<!--     p3    -->
+				<div class="swiper-slide ac-page ac-p3 ">
+					<!--图片框-->
+					<div class="img-cont ">
+						<img class="icon3-4 " src="imges/star02.png " />
+						<img class="icon3-5 " src="imges/img_s/word03.png " />
+					</div>
+					<div class="cow-cont">
+						<img class="icon3-1 " src="imges/img_s/cow3.png " />
+						<img class="icon3-2 " src="imges/img_s/desk.png " />
+						<img class="icon3-3 " src="imges/img_s/hans.png " />
+					</div>
+				</div>
+
+				<!--    p4     -->
+				<div class="swiper-slide ac-page ac-p4">
+					<!--图片框-->
+					<div class="down-4">
+						<img class="icon4-1" src="imges/img_s/lefthand.png" />
+						<img class="icon4-2" src="imges/img_s/phone4.png" />
+						<img class="icon4-3" src="imges/img_s/cow04.png" />
+						<img class="icon4-4" src="imges/img_s/shrink4.png" />
+						<img class="icon4-5 book" src="imges/img_s/book1.png" />
+						<img class="icon4-6 book" src="imges/img_s/book2.png" />
+						<img class="icon4-7 book" src="imges/img_s/book3.png" />
+						<img class="icon4-8 book" src="imges/img_s/book4.png" />
+						<img class="icon4-9 book" src="imges/img_s/book5.png" />
+						<img class="icon4-10 book" src="imges/img_s/book6.png" />
+						<img class="icon4-11 book" src="imges/img_s/book7.png" />
+						<img class="icon4-13 book" src="imges/img_s/book8.png" />
+						<img class="icon4-14 book" src="imges/img_s/book9.png" />
+					</div>
+					<div class="word-4">
+						<img class="icon4-12 book" src="imges/img_s/word4.png" />
+					</div>
+				</div>
+
+				<!--    p5    -->
+				<div class="swiper-slide ac-page ac-p5">
+					<!--图片框-->
+					
+					<div class="down-5">
+						<img class="icon5-1" src="imges/bac1.png" />
+						<img class="icon5-2" src="imges/img_s/cow05.png" />
+						<img class="lou" src="imges/img_s/lou.png" />
+						<img class="logo animate" src="imges/img_s/pic5.png" />
+						<img class="logo1 animate" src="imges/img_s/pic5_01.png" />
+						<img class="logo2 animate" src="imges/img_s/pic5_02.png" />
+					</div>
+					<div class="topic-5">
+						<img class="icon5-6" src="imges/img_s/word5.png" />
+						<img class="icon5-5" src="imges/img_s/moon.png" />
+						<img class="icon5-4 animate" src="imges/img_s/com.png" />
+					</div>
+				</div>
+
+				<!--    p6  -->
+				<div class="swiper-slide ac-page ac-p6">
+					<!--图片框-->
+					<div class="img-cont">
+						<img class="icon6-4" src="imges/img_s/word06.png" />
+					</div>
+					<div class="rocket-cont">
+						<img class="icon6-1" src="imges/img_s/cow06.png" />
+						<img class="icon6-2" src="imges/img_s/fire.png" />
+					</div>
+					<img class="icon6-3" src="imges/img_s/smok06.png" />
+				</div>
+
+				<!--   p7    -->
+				<div class="swiper-slide ac-page ac-p7">
+					<!--图片框-->
+					<div class="img-cont">
+						<img class="icon7-1" src="imges/img_s/word07.png" />
+						<img class="icon7-2" src="imges/img_s/word07_1.png" />
+						<a href="https://www.cninfo.com.cn" target="_blank"><img class="icon7-3" src="imges/img_s/word07_2.png" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript " src="scripts/swiper.min.js "></script>
+	<script type="text/javascript " src="scripts/TweenMax.min.js "></script>
+	<script type="text/javascript" src="scripts/TimelineMax.js"></script>
+	<script type="text/javascript" src="scripts/jweixin-1.0.0.js" ></script>
+	<script type="text/javascript" src="scripts/share.js" ></script>
+	<script type="text/javascript " src="scripts/musicOnOff.js?1 "></script>
+	<script type="text/javascript " src="scripts/main.js "></script>
+	<script>
+		musicOnOff({
+			id: "onOff",
+			src: "music.mp3",
+			onImg: "imges/music_on.png",
+			offImg: "imges/music_off.png"
+		});
+		$("#on").addClass("xz");
+	</script>
+
+</html>

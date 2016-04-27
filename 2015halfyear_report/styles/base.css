@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+body, td, input, select, textarea, h1, h2, h3, h4, h5, h6{ font-size:12px; background: #f2f2f2;}
+h1, h2, h3, h4, h5, h6{ font-weight:normal;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{ margin:0; padding:0;}
+ul, ol{ list-style:none;}
+img{border:0; vertical-align:top;}
+input,select,textarea{vertical-align:middle;}
+
+/* link */
+a{ text-decoration:none; color:#000;}
+a:hover{text-decoration:underline;}
+.clearfix:after{ visibility: hidden; display: block; font-size: 0; content: ""; clear: both; height: 0; }  
+.clearfix{*zoom: 1;}
+.loading p{
+	font-family: "微软雅黑";
+	font-size: 36px;
+	font-weight: bold;
+/*	margin-left: 200px;*/
+	margin-top: 400px;
+	text-align:center;
+/*	margin:0 auto ;*/
+}
