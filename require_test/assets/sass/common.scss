@@ -1,0 +1,19 @@
+$bgColor: #ccc;
+$bdColor: #fff;
+$ftColor: #fff;
+// common_head style
+@mixin m-head{
+	.g-hd{
+		width:100%;height: 80px;background: $bgColor;position: fixed;top: 0;left: 0;z-index: 800;
+		.hd_ctn{
+			width:1000px;height: 80px;margin: 0 auto;border: 1px solid $bdColor;
+		}
+	}
+}
+// common_foot style
+@mixin m-foot{
+	.g-ft{
+		width: 100%;height: 80px;position: fixed;bottom: 0;left: 0;z-index: 800;background: $bgColor;
+		.ft_ctn{width: 1000px;height: 80px;margin: 0 auto;border: 1px solid $bdColor;}
+	}
+}
