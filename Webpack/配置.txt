@@ -1,0 +1,50 @@
+G:
+cd G:\省广\分享案例\JavaScript热门技术\Webpack
+安装全局webpack
+npm install -g webpack
+默认是webpack.config.js为配置文件，如果要改变
+webpack —config webpack.custom.config.js
+生成package.json文件
+npm init
+安装第三方插件
+npm install react --save-dev
+npm install jquery --save-dev
+安装开发服务器
+npm install -g webpack-dev-server
+//react加载器
+npm install —save-dev react-hot-loader
+npm install css-loader style-loader --save-dev
+
+
+//========================webpack基本用法
+npm install html-webpack-plugin --save-dev
+//服务可以安装 npm install webpack-dev-middleware --save-dev
+npm install sass-loader --save-dev
+npm install node-sass --save-dev
+npm install less-loader --save-dev
+npm install node-less --save-dev
+npm install url-loader --save-dev
+npm install babel-loader babel-preset-es2015 --save-dev
+npm install jquery moment --save-dev
+npm install jshint-loader --save-dev//语法检验
+npm install exports-loader --save-dev//符合amd commjs标准
+npm install extract-text-webpack-plugin --save-dev //独立css样式
+npm install file-loader --save-dev //复制文件
+npm install transfer-webpack-plugin --save-dev //复制文件
+npm install imagemin-pngquant --save-dev //复制文件
+npm install image-loader --save-dev //复制文件
+npm install tinypng --save-dev //复制文件
+npm install bootstrap@4.0.0-alpha.2 --save-dev
+npm install react react-dom --save
+npm install babel-core babel-plugin-react-transform babel-preset-react babel-preset-react-hmre --save-dev
+npm install react-transform-catch-errors  react-addons-test-utils react-transform-catch-errors react-transform-hmr redbox-react --save-dev
+
+npm install rect-hot-loader --save-dev
+//调试
+npm start
+
+
+G:
+cd G:\省广\分享案例\JavaScript热门技术\Webpack
+//发布
+npm run publish
